@@ -161,11 +161,11 @@ namespace UnitTestProject1
             string expectedResult = "Coding[0], is[1], very[2], fun![3]";
 
             //Act
-            list.Zip((0 + 2) + (1 + 3));
+            list.Zip((0 + 1) + (2 + 3));
 
 
             //Assert
-            Assert.AreEqual(expectedResult, list(0 + 2) + (1 + 3));
+            Assert.AreEqual(expectedResult, list(0 + 1) + (2 + 3));
         }
 
     }
