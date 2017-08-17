@@ -85,6 +85,7 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list(null));
         }
+        [TestMethod]
         public void RemoveNumber()
         {
             //Arrange
@@ -97,29 +98,49 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list[1]);
         }
-        public void ConvertNumberToFirstNameLastName()
-        {
-            //Arrange
-            CustomList<int> list = new CustomList<int>();
-            int expectedResult = 1;
-
-            //Act 
-            list.ToString(1);
-
-            //Assert
-            Assert.AreEqual(expectedResult, list("Kiong" + "Lao"));
-        }
+        [TestMethod]
         public void ConvertWordToAbbreviation()
         {
             //Arrange
             CustomList<string> list = new CustomList<string>();
-            string expectedResult = "NFL";
+            string expectedResult = "M";
 
             //Act 
-            list.ToString("NFL");
+            list.Add("NFL");
+            list.Add("MLB");
+            string newStringLeagues = list.ToString();
+
+            //"NFL MLB"
+            
+            //Assert
+            Assert.AreEqual(expectedResult, newStringLeagues[4]);
+        }
+        public void IterrateThroughWeekdays()
+        {
+            //Arrange
+            CustomList<string> list = new CustomList<string>();
+            string expectedResult = "Monday, Tuesday, Wednesday, Thursday, Friday";
+           
+            //Act
+            list.Iterrate("Monday, Tuesday, Wednesday, Thursday, Friday");
+
 
             //Assert
-            Assert.AreEqual(expectedResult, list("National Football League"));
+            Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4]);
         }
+        public void IterrateEvenNumbersFromZeroToTwelve()
+        {
+            //Arrange
+            CustomList<int> list = new CustomList<int>();
+            int expectedResult =  0, 2, 4, 6, 8, 10, 12;
+
+            //Act
+            list.Iterrate("Monday, Tuesday, Wednesday, Thursday, Friday");
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4]);
+        }
+
     }
 }

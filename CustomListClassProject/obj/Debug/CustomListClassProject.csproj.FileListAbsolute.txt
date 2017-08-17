@@ -1,1 +1,2 @@
 C:\Users\kiong\Desktop\devCodeCamp\C#\CustomListClassProject\CustomListClassProject\bin\Debug\CustomListClassProject.exe.config
+C:\Users\kiong\Desktop\devCodeCamp\CustomListClassProject\CustomListProject\CustomListClassProject\bin\Debug\CustomListClassProject.exe.config
