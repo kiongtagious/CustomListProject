@@ -154,6 +154,19 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4, 5, 6, 7, 8]);
         }
+        public void ZipWords()
+        {
+            //Arrange
+            CustomList<string> list = new CustomList<string>();
+            string expectedResult = "Coding[0], is[1], very[2], fun![3]";
+
+            //Act
+            list.Zip((0 + 2) + (1 + 3));
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(0 + 2) + (1 + 3));
+        }
 
     }
 }
