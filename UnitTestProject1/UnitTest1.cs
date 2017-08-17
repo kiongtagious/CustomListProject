@@ -132,14 +132,27 @@ namespace UnitTestProject1
         {
             //Arrange
             CustomList<int> list = new CustomList<int>();
-            int expectedResult =  0, 2, 4, 6, 8, 10, 12;
+            string expectedResult = ("0, 2, 4, 6, 8, 10, 12;");
 
             //Act
-            list.Iterrate("Monday, Tuesday, Wednesday, Thursday, Friday");
+            list.Add("0, 2, 4, 6, 8, 10, 12;");
 
 
             //Assert
-            Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4]);
+            Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4, 5, 6, 7]);
+        }
+        public void IterrateFromAThroughI()
+        {
+            //Arrange
+            CustomList<string> list = new CustomList<string>();
+            string expectedResult = ("A, B, C, D, E, F, G, H, I");
+
+            //Act
+            list.Iterrate("A, B, C, D, E, F, G, H, I");
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4, 5, 6, 7, 8]);
         }
 
     }
