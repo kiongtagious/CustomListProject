@@ -7,6 +7,7 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
+        // Add Tests
         public void AddOneNumber()
         {
             //Arrange
@@ -46,6 +47,7 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, Kiong + Lao = KiongLao);
         }
+        // Remove Tests
         [TestMethod]
         public void RemoveLetter()
         {
@@ -98,6 +100,7 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list[1]);
         }
+        // ToString Tests
         [TestMethod]
         public void ConvertWordToAbbreviation()
         {
@@ -115,6 +118,8 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, newStringLeagues[4]);
         }
+        // Iterrate Tests
+        [TestMethod]
         public void IterrateThroughWeekdays()
         {
             //Arrange
@@ -128,6 +133,7 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4]);
         }
+        [TestMethod]
         public void IterrateEvenNumbersFromZeroToTwelve()
         {
             //Arrange
@@ -141,6 +147,7 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4, 5, 6, 7]);
         }
+        [TestMethod]
         public void IterrateFromAThroughI()
         {
             //Arrange
@@ -154,6 +161,8 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list[0, 1, 2, 3, 4, 5, 6, 7, 8]);
         }
+        // Zip Tests
+        [TestMethod]
         public void ZipWords()
         {
             //Arrange
@@ -167,6 +176,119 @@ namespace UnitTestProject1
             //Assert
             Assert.AreEqual(expectedResult, list(0 + 1) + (2 + 3));
         }
+        [TestMethod]
+        public void ZipLetters()
+        {
+            //Arrange
+            CustomList<string> list = new CustomList<string>();
+            string expectedResult = "C[0], O[1], D[2], E[3]";
 
+            //Act
+            list.Zip((0 + 1) + (2 + 3));
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(0 + 1) + (2 + 3));
+        }
+        [TestMethod]
+        public void ZipNumbers()
+        {
+            //Arrange
+            CustomList<string> list = new CustomList<string>();
+            string expectedResult = ("1, 2, 3, 4, 5, 6;");
+
+            //Act
+            list.Zip((1 + 3 + 5) + (2 + 4 + 6));
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list((1 + 3 + 5) + (2 + 4 + 6)));
+        }
+        // Overload + Operator Tests
+        [TestMethod]
+        public void OverloadPlusStringAndNumber()
+        {
+            //Arrange
+            CustomList<int> stringlist = new CustomList<int>() { 1 };
+            CustomList<int> intlist = new CustomList<int>() { 2 };
+
+            //Act
+            CustomList<int> expectedResult = stringlist + intlist;
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(stringlist + intlist);
+        }
+        [TestMethod]
+        public void OverloadPlusStringAndString()
+        {
+            //Arrange
+            CustomList<int> stringlist = new CustomList<int>() { 1 };
+            CustomList<int> stringlist = new CustomList<int>() { 2 };
+
+            //Act
+            CustomList<int> expectedResult = stringlist + stringlist;
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(stringlist + stringlist);
+        }
+        [TestMethod]
+        public void OverloadPlusIntAndInt()
+        {
+            //Arrange
+            CustomList<int> intlist = new CustomList<int>() { 1 };
+            CustomList<int> intlist = new CustomList<int>() { 2 };
+
+            //Act
+            CustomList<int> expectedResult = intlist + intlist;
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(intlist + intlist);
+        }
+        //Overload Minus Tests
+        [TestMethod]
+        public void OverloadMinusIntAndInt()
+        {
+            //Arrange
+            CustomList<int> intlist = new CustomList<int>() { 1 };
+            CustomList<int> intlist = new CustomList<int>() { 2 };
+
+            //Act
+            CustomList<int> expectedResult = intlist - intlist;
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(intlist - intlist);
+        }
+        [TestMethod]
+        public void OverloadMinusStringAndString()
+        {
+            //Arrange
+            CustomList<int> stringlist = new CustomList<int>() { 1 };
+            CustomList<int> stringlist = new CustomList<int>() { 2 };
+
+            //Act
+            CustomList<int> expectedResult = stringlist - stringlist;
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(stringlist - stringlist);
+        }
+        [TestMethod]
+        public void OverloadMinusStringAndInt()
+        {
+            //Arrange
+            CustomList<int> stringlist = new CustomList<int>() { 1 };
+            CustomList<int> intlist = new CustomList<int>() { 2 };
+
+            //Act
+            CustomList<int> expectedResult = stringlist - intlist;
+
+
+            //Assert
+            Assert.AreEqual(expectedResult, list(stringlist - intlist);
+        }
     }
 }
