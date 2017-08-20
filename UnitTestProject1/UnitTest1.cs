@@ -292,3 +292,7 @@ namespace UnitTestProject1
         }
     }
 }
+
+
+// List<string> NFLTeams = new List<string> { "Packers", "Lions", "Vikings" };
+Console.WriteLine(NFLTeams.Count); 

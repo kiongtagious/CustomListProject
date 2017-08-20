@@ -1,2 +1,7 @@
 C:\Users\kiong\Desktop\devCodeCamp\C#\CustomListClassProject\CustomListClassProject\bin\Debug\CustomListClassProject.exe.config
 C:\Users\kiong\Desktop\devCodeCamp\CustomListClassProject\CustomListProject\CustomListClassProject\bin\Debug\CustomListClassProject.exe.config
+C:\Users\kiong\Desktop\devCodeCamp\CustomListClassProject\CustomListProject\CustomListClassProject\bin\Debug\CustomListClassProject.exe
+C:\Users\kiong\Desktop\devCodeCamp\CustomListClassProject\CustomListProject\CustomListClassProject\bin\Debug\CustomListClassProject.pdb
+C:\Users\kiong\Desktop\devCodeCamp\CustomListClassProject\CustomListProject\CustomListClassProject\obj\Debug\CustomListClassProject.csprojResolveAssemblyReference.cache
+C:\Users\kiong\Desktop\devCodeCamp\CustomListClassProject\CustomListProject\CustomListClassProject\obj\Debug\CustomListClassProject.exe
+C:\Users\kiong\Desktop\devCodeCamp\CustomListClassProject\CustomListProject\CustomListClassProject\obj\Debug\CustomListClassProject.pdb
