@@ -52,6 +52,17 @@ namespace CustomListClassProject
             Console.WriteLine("The new string is '{0}'", modified);
 
         }
+        //Iterration Tests
+        public static void IterrateEvenZeroToTwelve()
+        {
+            List<int> numbers = new List<int>() { 0, 2, 4, 6, 8, 10, 12 };
+
+            foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+
+            }
+        }
     }
 
 }
