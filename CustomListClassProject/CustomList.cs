@@ -52,7 +52,7 @@ namespace CustomListClassProject
             Console.WriteLine("The new string is '{0}'", modified);
 
         }
-        //Iterration Tests
+        //Iterration Method
         public static void IterrateEvenZeroToTwelve()
         {
             List<int> numbers = new List<int>() { 0, 2, 4, 6, 8, 10, 12 };
@@ -62,6 +62,17 @@ namespace CustomListClassProject
                 Console.WriteLine(number);
 
             }
+        }
+        //Zip Method
+        public static void ZipWords()
+        {
+            string[] firstWords = { "Coding", "is" };
+            string[] secondWords = { "very", "fun!" };
+
+            var allWords = firstWords.Zip(secondWords, (first, second) => first + " " + second);
+
+            foreach (var word in allWords)
+                Console.WriteLine(word);
         }
     }
 
