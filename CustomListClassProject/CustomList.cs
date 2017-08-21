@@ -27,6 +27,31 @@ namespace CustomListClassProject
             double b = secondNumber = 5;
             return a + b;
         }
+        //Remove Method
+        public void RemoveAllWords()
+        {
+            string[] wordsList = "I like to code!".Split(' ');
+            string removeAll = "null";
+            string result = removeAll;
+
+            foreach (string word in removeAll.Split(' '))
+            {
+                if (wordsList.Contains(word.ToUpper()))
+                {
+                    int start = result.IndexOf(word);
+                    result = result.Remove(start, word.Length);
+                }
+            }
+            
+        }
+        //ToString Method
+        public static void InsertLetterAtIndex()
+        {
+            string words = "NFL  LB";
+            string modified = words.Insert(4, "M");
+            Console.WriteLine("The new string is '{0}'", modified);
+
+        }
     }
 
 }
