@@ -74,6 +74,26 @@ namespace CustomListClassProject
             foreach (var word in allWords)
                 Console.WriteLine(word);
         }
+        //Overload + Method
+        public static CustomList<T> operator +(CustomList<T> stringlist, CustomList<T> intlist)
+        {
+            CustomList<T> result = stringlist + intlist;
+
+            return new CustomList<T>();
+                
+        }
+        //Overload - Method
+        public static CustomList<T> operator -(CustomList<T> stringlist, CustomList<T> intlist)
+        {
+            CustomList<T> result = stringlist - intlist;
+
+            return new CustomList<T>();
+
+        }
+
+
+
+    }
     }
 
 }
