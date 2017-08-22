@@ -17,7 +17,7 @@ namespace CustomListClassProject
             NFLTeams.Add("Vikings");
 
             Console.WriteLine("{0} NFLTeams:", NFLTeams.Count);
-            Display(NFLTeams);
+           
 
         }
         //Add Method
@@ -96,4 +96,4 @@ namespace CustomListClassProject
     }
     }
 
-}
+
